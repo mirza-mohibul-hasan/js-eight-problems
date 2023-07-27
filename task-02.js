@@ -5,4 +5,4 @@ const positiveArraySum = arr =>{
     return sum;
 }
 
-console.log(positiveArraySum([2, -5, 10, -3, 7]))
+// console.log(positiveArraySum([2, -5, 10, -3, 7]))

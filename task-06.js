@@ -27,4 +27,5 @@ const generageRandomPassword = (length = 8) => {
     return password;
 }
 
-console.log(generageRandomPassword(12))
+// console.log(generageRandomPassword(12))
+// console.log(generageRandomPassword())
