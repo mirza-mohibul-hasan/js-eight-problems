@@ -12,4 +12,4 @@ const twoNumbersIndices = (arr, target) =>{
     }
 }
 
-console.log(twoNumbersIndices([1, 3, 6, 8, 11, 15], 9))
+// console.log(twoNumbersIndices([1, 3, 6, 8, 11, 15], 9))

@@ -1,4 +1,6 @@
-// Write a JavaScript program to find the most frequent element in an array and return it. 
+/* 
+Write a JavaScript program to find the most frequent element in an array and return it. 
+*/
 
 const frequentElement = (arr) =>{
     let most = [];
@@ -26,5 +28,4 @@ const frequentElement = (arr) =>{
     return most;
 }
 
-let arr = [3, 5, 2, 5, 3, 3, 1, 4, 5, 5]
-console.log(frequentElement(arr))
+// console.log(frequentElement([3, 5, 2, 5, 3, 3, 1, 4, 5, 5]))

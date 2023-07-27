@@ -8,17 +8,19 @@ const generageRandomPassword = (length = 8) => {
 
     let password = "";
     for(let i = 0; i<length; i++){
+
         let type = Math.floor(Math.random() * (4 - 1 + 1)) + 1;
+
         if(type === 1){
             password += uppercaseLetters[Math.floor(Math.random() * (25 - 0 + 1)) + 0]
         }
-        if(type === 2){
+        else if(type === 2){
             password += lowercaseLetters[Math.floor(Math.random() * (25 - 0 + 1)) + 0]
         }
-        if(type === 3){
+        else if(type === 3){
             password += numbers[Math.floor(Math.random() * (9 - 0 + 1)) + 0]
         }
-        if(type === 4){
+        else if(type === 4){
             password += specialCharacters[Math.floor(Math.random() * (25 - 0 + 1)) + 0]
         }
     }

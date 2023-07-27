@@ -4,23 +4,25 @@ Implement a JavaScript function to find the second smallest element in an array 
 
 const secondSmallest = arr => {
 
-    let first = Number.MAX_VALUE;
-    let second = Number.MAX_VALUE;
+    let smallest = Number.MAX_VALUE;
+    let secondSmallest = Number.MAX_VALUE;
 
-    for (let i = 0; i < arr.length && arr.length; i++) {
-        if (first > arr[i]) {
-            second = first
-            first = arr[i]
+    for (let i = 0; i < arr.length && arr.length > 1; i++) {
+        if (arr[i] < smallest) {
+            secondSmallest = smallest
+            smallest = arr[i]
         }
-        else if (arr[i] < second && arr[i] != first) {
-            second = arr[i]
+        else if (arr[i] < secondSmallest && arr[i] > smallest) {
+            secondSmallest = arr[i]
         }
 
     };
 
-    return second;
+    return secondSmallest;
 
 };
 
 // console.log(secondSmallest([5,3,2,1,39,44,-23,-23]))
+// console.log(secondSmallest( [19,30,190,20,2,56,60]))
+// console.log(secondSmallest([12, 13, 1, 10, 34, 1]))
 // console.log(secondSmallest([5]))
